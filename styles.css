@@ -375,15 +375,45 @@ footer{
     text-align: center;
     position:relative;
 }
-.couple-section .couple:nth-child(2):before{
-    content: '';
-    position:absolute;
-    left:0;
-    top:0;
-    width:1px;
-    height:100%;
-    background-color: #cccccc;
+@media (min-width: 576px) {
+    .couple-section .couple:nth-child(2):before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #cccccc;
 
+    }
+
+    .couple-section .couple i {
+        width: 31px;
+        text-align: center;
+        background-color: #000000;
+        padding: 5px;
+        color: rgb(161, 10, 35);
+        font-size: 18px;
+
+    }
+
+    .couple-section .couple .top-heart i {
+        position: absolute;
+        right: 0px;
+        margin-right: -17px;
+        top: 5px;
+        z-index: 1;
+
+
+    }
+
+    .couple-section .couple .bottom-heart i {
+        position: absolute;
+        left: 0px;
+        margin-left: -14px;
+        bottom: 5px;
+
+    }
 }
 .couple-section .couple img{
     max-width:300px;
@@ -406,31 +436,8 @@ footer{
     }
 
 }
-.couple-section .couple i{
-        width: 31px;
-        text-align: center;
-        background-color: #000000;
-        padding: 5px;
-        color: rgb(161, 10, 35);
-        font-size: 18px;
 
-}
-.couple-section .couple .top-heart i {
-    position: absolute;
-    right: 0px;
-    margin-right: -17px;
-    top: 5px;
-    z-index: 1;
-   
-
-}
-.couple-section .couple .bottom-heart i {
-    position: absolute;
-    left: 0px;
-    margin-left: -14px;
-    bottom: 5px;
-
-}
+ 
 .couple-section .couple h3{
     color:rgb(199, 23, 53);
     font-size:40px;
@@ -744,6 +751,9 @@ footer{
 
 
 }
+.event-venue p{
+    font-size: 20px;
+}
 }
 /* family section */
 .family-section{
@@ -906,7 +916,8 @@ footer{
     }
 }
 @media (max-width: 468px) {
-    .footer-msg p {
+    .footer-msg p,
+    .family-description {
         font-size: 15px;
         }
     .footer-regarding h2 {
