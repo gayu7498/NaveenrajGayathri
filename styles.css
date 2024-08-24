@@ -620,9 +620,10 @@ footer{
  }
 
  .event-venue h3 {
-     font-size: 30px;
+     font-size: 36px;
      padding:10px;
-     margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    margin: 0 100px 25px;
  }
 
  .event-venue span {
@@ -671,7 +672,10 @@ footer{
     text-decoration: underline;
     transition: color 0.3s ease;
 }
-
+.event-venue .location-link .location-text i {
+    margin-left: 5px;
+    color: rgb(199, 23, 53)
+}
 .event-venue .location-link .location-text:hover {
     color: rgb(199, 23, 53);
 }
@@ -745,7 +749,6 @@ footer{
     }
          
     .event-venue h3 {   
-        border-bottom: 1px solid #cccccc;
         margin: 0 50px 20px;
         
 
@@ -808,6 +811,11 @@ footer{
     box-shadow: 0 0 10px #4d4343, 0 3px 4px #726969;
     margin-top:-40px;
 }
+@media (max-width: 468px) {
+    .family-description {
+        font-size: 15px;
+    }
+}
 /* gallery section */
 .gallery-section{
     padding: 80px 0 80px ;
@@ -855,7 +863,6 @@ footer{
     font-size: 18px;
     font-style:italic ;
     line-height: 1.6;
-    margin:20px;
 }
 .footer-regarding {
     font-size: 20px;
@@ -916,9 +923,9 @@ footer{
     }
 }
 @media (max-width: 468px) {
-    .footer-msg p,
-    .family-description {
+    .footer-msg p{
         font-size: 15px;
+        margin:0 20px;
         }
     .footer-regarding h2 {
         font-size: 35px;
